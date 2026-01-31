@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f0cbce998.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="gambar/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Seorang Pelajar</p>
+                <h1>Hallo semuanya,<br> saya Azzam <span>Aryan</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--beda halman ini bagian About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="container-col-1">
+                    <img src="gambar/fotoku.png">
+                </div>
+                <div class="container-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Seorang pelajar kelas X dari salah satu SMAN di kota karanganyar. Tujuan saya membuat website ini
+                        untuk belajar membuat website dan sebagai portfolio saya dimasa depan. Sudah dapat memahami
+                        bahasa pemograman Python yang cukup baik dan sudah membuat 10+ project dengan Python. Dapat
+                        bekerja sendiri ataupun didalam tim dan dapat menyesuaika diri dengan lingkungan di sekitar.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software developer</span><br>Create software using Python</li>
+                            <li><span>OS operator</span><br>Berpengalaman mengoperasikan Windows dan Linux</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Pengguna Linux Debian</span><br>Cukup lama menggunakan linux Debian</li>
+                            <li><span>Pemimpin tim</span><br>Beberapa kali memimpin tim kecil tugas </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sekolah Dasar</span><br>Lulusan SDN 2 Jaten tahun 2021/2022</li>
+                            <li><span>Sekolah Menengah Pertama</span><br>Lulusan SMPN 1 Jaten tahun 2024/2025 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--service-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software developer</h2>
+                    <p>Saya bisa membuat beberapa jenis software dengan python, walaupun masih dasar tapi dapat
+                        berfungsi deengan baik.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hand-fist"></i>
+                    <h2>Grub Leader</h2>
+                    <p>Dapat diandalkan untuk memimpin suatu tim untuk project kecil hingga project menengah</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>OS operator</h2>
+                    <p>Dapat mengoperasikan berbagai jenis OS teerutama Windows dan Linux dengan cukup mumpuni.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--project-->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="gambar/ARYANAI.jpg">
+                    <div class="layer">
+                        <h3>Aryan.AI</h3>
+                        <p>Sebuah software yang mirip dengan google asissten, yang dapat membuka aplikasi, file dan
+                            mencari kata. Kelebihannya adalah dapat berjalan walau tanpa internet</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="gambar/hand-gesture.jpeg">
+                    <div class="layer">
+                        <h3>Hand gesture detection</h3>
+                        <p>Sebuah program yang dimana dapat mendeteksi suatu gesture tangan tertentu dan mengubahnya
+                            menjadi suara dan text</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="gambar/mousetracing.jpg">
+                    <div class="layer">
+                        <h3>Mouse tracking</h3>
+                        <p>Sebuah program dimana dapat menggerakkan cursor yan gada dikomputer dengan gerakan telunjuk
+                            tangan</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>azzamaryaputra1@gmail.com</p>
+                    <p><i class="fa-brands fa-square-whatsapp"></i>089680895900</p>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@aryanjava9?_r=1&_t=ZS-93OhOSCQwXn"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/aap.2010?igsh=cWtvZnRhMzByYjhr"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1AvyLFWw4P/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.me/Azzamarya1"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Azzam Arya. thank for my bro Yuda Surya</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
